@@ -1,0 +1,225 @@
+:root {
+    /* Orange background */
+    --primary:#F1AB3C;
+    /*--primary-hover:#;*/
+
+    /* Yelllow of the bee */
+    --secondary:#FFDF6E;
+    /*--secondary-hover:#;*/
+
+    --muted:#666666;
+}
+
+/* Font Catamaran */
+@font-face {
+  font-family: 'Catamaran';
+  src: url('../fonts/Catamaran/static/Catamaran-ExtraLight.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  src: url('../fonts/Catamaran/static/Catamaran-Light.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  src: url('../fonts/Catamaran/static/Catamaran-SemiBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Catamaran';
+  src: url('../fonts/Catamaran/static/Catamaran-ExtraBold.ttf') format('truetype');
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+  color: var(--muted);
+}
+
+body {
+  font-family: 'Catamaran', system-ui, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+
+@media (min-width: 1200px){
+  .container {
+    max-width: 1340px;
+  }
+}
+
+main section h1 {
+  font-weight: bold !important;
+}
+
+/*----------------------------------
+  Buttons
+------------------------------------*/
+/*.btn {
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn.focus,
+.btn:focus .btn.active:focus, .btn:active:focus {
+  outline: 0 none;
+  box-shadow: none;
+  border-color: transparent;
+}*/
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 0;
+}
+.btn-secondary {
+  background-color: var(--secondary);
+  border: 0;
+}
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border: 0;
+}
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-outline-secondary {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--secondary-hover);
+  border-color: var(--secondary-hover);
+}
+
+
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+  border: 0;
+}
+
+.btn-gradient {
+  background: linear-gradient(to right,var(--primary),var(--secondary));
+  border: none;
+  border-radius: 20px;
+  color: white;
+}
+.btn-gradient:hover {
+  background: linear-gradient(to right,var(--primary-hover),var(--secondary-hover));
+  transition: background 0.5s; 
+  color: white;
+}
+
+
+label {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+.gradient {
+  background: linear-gradient(to right,var(--primary),var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient {
+  background: linear-gradient(to right,var(--primary),var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+
+.bg-gradient {
+  background: linear-gradient(to right,var(--primary),var(--secondary));
+}
+.btn.bg-gradient:hover {
+  background: linear-gradient(to right,var(--primary-hover),var(--secondary-hover));
+  /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;*/
+  transition: background 0.5s;
+}
+
+
+.card {
+  border-radius: 25px;
+}
+
+pre {
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+
+@media print {
+  header, footer, aside, nav, form {
+    display: none;
+  }
+  @page { 
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body { 
+    margin: 1.6cm;
+  }
+}
+
+header .btn .feather,
+.input-group-text .feather{
+	width: 18px;
+	height: 18px;
+}
+
+
+
+/* SOCIAL */ 
+.display-1 .feather {
+	width: 52px;
+	height: 52px;
+}
+
+
+.bottom-link {
+	display: block;
+	background-color: black;
+	z-index: 1001;
+	position: fixed !important;
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	bottom: 20px;
+	right: 20px;
+	overflow: visible;
+	color: white;
+	text-align: center;
+	line-height: 37px;
+}
+
