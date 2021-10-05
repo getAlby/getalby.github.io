@@ -124,6 +124,18 @@ main section h1 {
 }
 
 
+.btn-outline-dark {
+  border: solid 4px black;
+}
+
+.btn-outline-dark:hover {
+  color: black;
+  /*border: solid 4px var(--secondary);*/
+  box-shadow: 0 0 6px #444444;
+}
+
+
+
 label {
   margin: 0;
   text-transform: uppercase;
