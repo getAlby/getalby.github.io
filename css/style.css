@@ -35,6 +35,9 @@
   font-weight: 900;
 }
 
+
+
+
 h1, h2, h3, h4, h5, h6, label {
   color: var(--muted);
 }
@@ -71,6 +74,24 @@ p {
 main section h1 {
   font-weight: 900 !important;
 }
+
+
+/* Font Caveat */
+@font-face {
+  font-family: 'Caveat';
+  src: url('../fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+
+main #do-it{
+  font-family: 'Caveat', system-ui, Arial, sans-serif;
+  font-size: 32px;
+  padding-top: 30px;
+}
+
+
 
 /*----------------------------------
   Buttons
