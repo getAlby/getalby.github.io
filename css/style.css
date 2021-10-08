@@ -35,6 +35,9 @@
   font-weight: 900;
 }
 
+
+
+
 h1, h2, h3, h4, h5, h6, label {
   color: var(--muted);
 }
@@ -69,8 +72,26 @@ p {
 }
 
 main section h1 {
-  font-weight: bold !important;
+  font-weight: 900 !important;
 }
+
+
+/* Font Caveat */
+@font-face {
+  font-family: 'Caveat';
+  src: url('../fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+  font-weight: 300;
+}
+
+
+
+main #do-it{
+  font-family: 'Caveat', system-ui, Arial, sans-serif;
+  font-size: 32px;
+  padding-top: 30px;
+}
+
+
 
 /*----------------------------------
   Buttons
@@ -123,17 +144,17 @@ main section h1 {
   border: 0;
 }
 
-.btn-gradient {
-  background: linear-gradient(to right,var(--primary),var(--secondary));
-  border: none;
-  border-radius: 20px;
-  color: white;
+
+.btn-outline-dark {
+  border: solid 4px black;
 }
-.btn-gradient:hover {
-  background: linear-gradient(to right,var(--primary-hover),var(--secondary-hover));
-  transition: background 0.5s; 
-  color: white;
+
+.btn-outline-dark:hover {
+  color: black;
+  /*border: solid 4px var(--secondary);*/
+  box-shadow: 0 0 6px #444444;
 }
+
 
 
 label {
@@ -145,38 +166,6 @@ img {
   max-width: 100%;
 }
 
-.gradient {
-  background: linear-gradient(to right,var(--primary),var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-gradient {
-  background: linear-gradient(to right,var(--primary),var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-}
-
-
-.bg-gradient {
-  background: linear-gradient(to right,var(--primary),var(--secondary));
-}
-.btn.bg-gradient:hover {
-  background: linear-gradient(to right,var(--primary-hover),var(--secondary-hover));
-  /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;*/
-  transition: background 0.5s;
-}
-
-
-.card {
-  border-radius: 25px;
-}
-
-pre {
-  padding: 10px;
-  background-color: #eeeeee;
-}
 
 
 @media print {
@@ -204,22 +193,5 @@ header .btn .feather,
 .display-1 .feather {
 	width: 52px;
 	height: 52px;
-}
-
-
-.bottom-link {
-	display: block;
-	background-color: black;
-	z-index: 1001;
-	position: fixed !important;
-	width: 40px;
-	height: 40px;
-	border-radius: 30px;
-	bottom: 20px;
-	right: 20px;
-	overflow: visible;
-	color: white;
-	text-align: center;
-	line-height: 37px;
 }
 
