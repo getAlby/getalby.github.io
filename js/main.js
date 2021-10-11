@@ -2,6 +2,8 @@
 const google_play_url = "#";
 const firefox_extension_url = "#";
 
+const github_url = "https://github.com/getAlby/lightning-browser-extension#try-out-the-most-recent-version";
+
 
 $(document).ready(function () {
 
@@ -16,8 +18,11 @@ $(document).ready(function () {
 
 	// Google Chrome
 	// if( is_google_chrome() ){
-		add_alby_btn_header.innerHTML = '<a href="'+google_play_url+'" class="btn btn-outline-dark bg-white rounded-pill px-4 my-4"><b>Add to Chrome</b></a>';
-		add_alby_btn.innerHTML = '<a href="'+google_play_url+'" class="btn btn-outline-dark bg-white btn-lg rounded-pill"><img src="images/browsers/google-icon.png" style="max-height: 32px;"/><b> Add to Chrome</b></a>';
+		// add_alby_btn_header.innerHTML = '<a href="'+google_play_url+'" class="btn btn-outline-dark bg-white rounded-pill px-4 my-4"><b>Add to Chrome</b></a>';
+		// add_alby_btn.innerHTML = '<a href="'+google_play_url+'" class="btn btn-outline-dark bg-white btn-lg rounded-pill"><img src="images/browsers/google-icon.png" style="max-height: 32px;"/><b> Add to Chrome</b></a>';
+
+		add_alby_btn_header.innerHTML = '<a href="'+github_url+'" class="btn btn-outline-dark bg-white rounded-pill px-4 my-4"><b>Add to my browser</b></a>';
+		add_alby_btn.innerHTML = '<a href="'+github_url+'" class="btn btn-outline-dark bg-white btn-lg rounded-pill"><b>Add to my browser</b></a>';
 	// }
 	
 
