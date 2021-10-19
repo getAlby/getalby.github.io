@@ -1,6 +1,6 @@
 :root {
     /* Orange background */
-    --primary:#F1AB3C;
+    --primary:#F8C555;
     /*--primary-hover:#;*/
 
     /* Yelllow of the bee */
@@ -34,9 +34,6 @@
   src: url('../fonts/Catamaran/static/Catamaran-ExtraBold.ttf') format('truetype');
   font-weight: 900;
 }
-
-
-
 
 h1, h2, h3, h4, h5, h6, label {
   color: var(--muted);
@@ -75,7 +72,6 @@ main section h1 {
   font-weight: 900 !important;
 }
 
-
 /* Font Caveat */
 @font-face {
   font-family: 'Caveat';
@@ -83,15 +79,10 @@ main section h1 {
   font-weight: 300;
 }
 
-
-
 main #do-it{
-  font-family: 'Caveat', system-ui, Arial, sans-serif;
-  font-size: 32px;
-  padding-top: 30px;
+  padding-left: 100px;
+  padding-top: 20px;
 }
-
-
 
 /*----------------------------------
   Buttons
@@ -138,24 +129,20 @@ main #do-it{
   border-color: var(--secondary-hover);
 }
 
-
 .btn-secondary:hover {
   background-color: var(--secondary-hover);
   border: 0;
 }
 
-
 .btn-outline-dark {
-  border: solid 4px black;
+  border: solid 3px black;
 }
 
 .btn-outline-dark:hover {
   color: black;
   /*border: solid 4px var(--secondary);*/
-  box-shadow: 0 0 6px #444444;
+  box-shadow: 0 8px 15px -5px #C69E44;
 }
-
-
 
 label {
   margin: 0;
@@ -165,8 +152,6 @@ label {
 img {
   max-width: 100%;
 }
-
-
 
 @media print {
   header, footer, aside, nav, form {
@@ -182,11 +167,10 @@ img {
 }
 
 header .btn .feather,
-.input-group-text .feather{
+.input-group-text .feather {
 	width: 18px;
 	height: 18px;
 }
-
 
 main ul {
   list-style: none; /* Remove default bullets */
@@ -201,18 +185,265 @@ main ul li::before {
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+/* Header */
 
+header.navbar {
+  padding: 0;
+}
+
+header .container-fluid {
+  padding: 0;
+}
+
+header .navbar-brand {
+  
+}
+
+header .navbar-brand img {
+  height: auto;
+}
+
+header .navbar-nav {
+  
+}
+
+header .navbar-nav .nav-item {
+  
+}
+
+header .navbar-nav .nav-item a {
+  
+}
 
 header .social-icons {
     max-height: 24px;
 }
 
-
-
-
-/* SOCIAL */ 
-.display-1 .feather {
+header .display-1 .feather {
 	width: 52px;
 	height: 52px;
 }
 
+/* Banner */
+
+section.banner .container {
+  max-width: 1400px;
+}
+
+section.banner .banner-copy {
+
+}
+
+section.banner h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+}
+
+section.banner h3 {
+  line-height: 1.4;
+}
+
+section.banner ul {
+
+}
+
+section.banner ul li {
+
+}
+
+section.banner #add_alby_btn {
+  display: flex;
+}
+
+section.banner #add_alby_btn a {
+
+}
+
+section.banner .banner-social-links {
+  display: none;
+  justify-content: center;
+  gap: 20px;
+}
+
+section.banner .banner-social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 100px;
+}
+
+section.banner #do-it {
+
+}
+
+section.banner .banner-image {
+
+}
+
+section.banner .banner-image img {
+  height: auto;
+}
+
+/* Styles for showing/hiding browser-specific buttons */
+
+#add_alby_btn_header a.button--chrome { display: none; }
+#add_alby_btn_header a.button--firefox { display: none; }
+#add_alby_btn a.button--chrome { display: none; }
+#add_alby_btn a.button--firefox { display: none; }
+
+body.--chrome #add_alby_btn_header a.button--chrome { display: block; }
+body.--chrome #add_alby_btn_header a.button--other { display: none; }
+body.--chrome #add_alby_btn a.button--chrome { display: block; }
+body.--chrome #add_alby_btn a.button--other { display: none; }
+
+body.--firefox #add_alby_btn_header a.button--firefox { display: block; }
+body.--firefox #add_alby_btn_header a.button--other { display: none; }
+body.--firefox #add_alby_btn a.button--firefox { display: block; }
+body.--firefox #add_alby_btn a.button--other { display: none; }
+
+/* Unique to mobile */
+
+/*@media only screen and (max-width: 639px) {*/
+@media only screen and (max-width: 1023px) {
+  header.navbar .container-fluid {
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  header .navbar-nav {
+    display: none;
+  }
+
+  header .navbar-brand img {
+    width: 200px;
+  }
+
+  section.banner .banner-copy {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.banner h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  section.banner h3 {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  section.banner #add_alby_btn {
+    margin-top:  20px;
+    justify-content: center;
+  }
+
+  section.banner #do-it {
+    display: none;
+  }
+
+  section.banner .banner-social-links {
+    display: flex;
+  }
+
+  section.banner .banner-image {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+/* Unique to tablet */
+
+@media only screen and (min-width: 640px) and (max-width: 1023px) {
+  header .navbar-brand img {
+    width: 138px;
+  }
+
+  section.banner h1 {
+    font-size: 68px;
+  }
+
+  section.banner h3 {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+}
+
+/* Unique to desktop */
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header.navbar {
+    padding: 20px 40px;
+  }
+
+  header .navbar-brand img {
+    width: 138px;
+  }
+
+  header .navbar-nav {
+    align-items: center;
+    gap: 20px;
+  }
+
+  section.banner  {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  section.banner .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+  }
+
+  section.banner .banner-copy {
+    width: auto;
+    max-width: none;
+    flex-shrink: 1;
+    flex-basis: 50%;
+  }
+
+  section.banner .banner-social-links {
+    display: none;
+  }
+
+  section.banner .banner-image {
+    width: auto;
+    max-width: none;
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+
+  section.banner h1 {
+    font-size: 80px;
+  }
+
+  section.banner h3 {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+}
