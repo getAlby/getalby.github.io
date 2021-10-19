@@ -202,9 +202,12 @@ main ul li::before {
 }
 
 
+.browser-icon {
+  height: 30px;
+}
 
 header .social-icons {
-    max-height: 24px;
+  height: 24px;
 }
 
 
