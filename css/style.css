@@ -289,23 +289,6 @@ section.banner .banner-image img {
   height: auto;
 }
 
-/* Styles for showing/hiding browser-specific buttons */
-
-#add_alby_btn_header a.button--chrome { display: none; }
-#add_alby_btn_header a.button--firefox { display: none; }
-#add_alby_btn a.button--chrome { display: none; }
-#add_alby_btn a.button--firefox { display: none; }
-
-body.--chrome #add_alby_btn_header a.button--chrome { display: block; }
-body.--chrome #add_alby_btn_header a.button--other { display: none; }
-body.--chrome #add_alby_btn a.button--chrome { display: block; }
-body.--chrome #add_alby_btn a.button--other { display: none; }
-
-body.--firefox #add_alby_btn_header a.button--firefox { display: block; }
-body.--firefox #add_alby_btn_header a.button--other { display: none; }
-body.--firefox #add_alby_btn a.button--firefox { display: block; }
-body.--firefox #add_alby_btn a.button--other { display: none; }
-
 /* Unique to mobile */
 
 /*@media only screen and (max-width: 639px) {*/

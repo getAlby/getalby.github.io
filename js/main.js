@@ -1,32 +1,34 @@
-$(document).ready(function () {
-	// Firefox
-	if( is_firefox() ) {
-		document.body.classList.add('--firefox');
-	}
+(function () {
+  if (isFirefox()) {
+    showElem(".button--firefox");
+  } else if (isGoogleChrome()) {
+    showElem(".button--chrome");
+  } else {
+    showElem(".button--other");
+  }
 
-	// Google Chrome
-	else if( is_google_chrome() ){
-		document.body.classList.add('--chrome');
-	}
+  //Display the icons
+  feather.replace();
+})();
 
-	else{
-		document.body.classList.add('--other');
-	}
-
-	//Display the icons
-	feather.replace();
-});
-
-function is_firefox(){
-	if(typeof InstallTrigger !== 'undefined') {
-		return true;
-	}
-	return false;	
+function isFirefox() {
+  if (typeof InstallTrigger !== "undefined") {
+    return true;
+  }
+  return false;
 }
 
-function is_google_chrome(){
-	if(window.chrome !== null && typeof window.chrome !== "undefined") {
-		return true;
-	}
-	return false;
+function isGoogleChrome() {
+  if (window.chrome !== null && typeof window.chrome !== "undefined") {
+    return true;
+  }
+  return false;
+}
+
+function showElem(selector) {
+  const items = document.querySelectorAll(selector);
+  items.forEach(function (item) {
+    item.classList.remove("d-none");
+    item.classList.add("d-block");
+  });
 }
