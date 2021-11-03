@@ -64,55 +64,139 @@
 <body class="bg-primary">
 	<header class="navbar navbar-expand-lg d-print-none" role="header">
 	    <div class="container-fluid">
-	        <a href="#" class="navbar-brand" title="Alby">
-	        	<img src="images/logo/logo-head-alby.png" style="max-height: 52px;"/>
+	        <a href="/" class="navbar-brand" title="Alby">
+	        	<picture>
+					<source
+						media="(max-width: 639px)"
+						srcset="images/logo/alby-logo-full.svg" 
+					>
+					<img
+						src="images/logo/alby-logo-head.svg"
+						width="1210" 
+						height="525"
+						alt="Alby" 
+					>
+				</picture>
 	        </a>
 	        <div class="row">
-            	<ul class="navbar-nav mr-auto float-left">
-            		<li class="nav-item px-3 pt-2 h5">
-						<a href="https://twitter.com/getalby" class="text-dark display-2" rel="nofollow" target="_blank" title="Alby on Twitter">
-							<img src="images/social/twitter-icon.png" class="social-icons"/>
+            	<ul class="navbar-nav">
+            		<li class="nav-item">
+						<a href="https://twitter.com/getalby" class="text-dark" rel="nofollow" target="_blank" title="Alby on Twitter">
+							<img
+								class="social-icons"
+								src="images/social/twitter.svg"
+								width="30"
+								height="30"
+								alt="Twitter logo"
+							/>
 						</a>
 					</li>
-					<li class="nav-item px-3 pt-2 h5">
-						<a href="https://t.me/getAlby" class="text-dark display-2" rel="nofollow" target="_blank" title="Alby on Telegram">
-							<img src="images/social/telegram-icon.png" class="social-icons"/>
+					<li class="nav-item">
+						<a href="https://t.me/getAlby" class="text-dark" rel="nofollow" target="_blank" title="Alby on Telegram">
+							<img
+								class="social-icons"
+								src="images/social/telegram.svg"
+								width="30"
+								height="30"
+								alt="Telegram logo"
+							/>
 						</a>
 					</li>
-					<li class="nav-item px-3 pt-2 h5">
-						<a href="https://github.com/getAlby" class="text-dark display-2" rel="nofollow" target="_blank" title="Alby on Github">
-							<img src="images/social/github-icon.png" class="social-icons"/>
+					<li class="nav-item">
+						<a href="https://github.com/getAlby" class="text-dark" rel="nofollow" target="_blank" title="Alby on Github">
+							<img
+								class="social-icons"
+								src="images/social/github.svg"
+								width="30"
+								height="30"
+								alt="Github logo"
+							/>
 						</a>
 					</li>
-					<li class="nav-item px-3 pt-2 h5">
-						<div id="add_alby_btn_header"></div>
+					<li class="nav-item">
+						<div id="add_alby_btn_header">
+							<a href="#" class="btn btn-outline-dark bg-white rounded-pill button--firefox"><b>Add to Firefox</b></a>
+							<a href="#" class="btn btn-outline-dark bg-white rounded-pill button--chrome"><b>Add to Chrome</b></a>
+							<a href="https://github.com/getAlby/lightning-browser-extension#try-out-the-most-recent-version" class="btn btn-outline-dark bg-white rounded-pill button--other"><b>Add to my browser</b></a>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</header>
 	<main>
-		<section>
-			<div class="container mt-5">
+		<section class="banner">
+			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<h1 class="text-white mt-5 py-5 display-1">Lightning buzz for your Browser</h1>
+					<div class="banner-copy">
+						<h1 class="text-white display-1">Lightning buzz for your Browser</h1>
 						<h3 class="text-dark">
 							Alby brings Bitcoin to the web with in-browser payments and identity, no account required.
 						</h3>
 						<ul>
-							<li class="py-2 h5">Instant payments to your favourite publishers and service providers</li>
-							<li class="py-2 h5">No need to remember a username or password for these websites</li>
-							<li class="py-2 h5">Direct interactions between you and the receiver, no need to worry about third party trackers</li>
+							<li class="h5">Instant payments to your favourite publishers and service providers</li>
+							<li class="h5">No need to remember a username or password for these websites</li>
+							<li class="h5">Direct interactions between you and the receiver, no need to worry about third party trackers</li>
 						</ul>
-						<div id="add_alby_btn"></div>
+						<div class="banner-social-links">
+							<a href="https://twitter.com/getalby" class="text-dark" rel="nofollow" target="_blank" title="Alby on Twitter">
+								<img
+									class="social-icons"
+									src="images/social/twitter.svg"
+									width="30"
+									height="30"
+									alt="Twitter logo"
+								/>
+							</a>
+							<a href="https://t.me/getAlby" class="text-dark" rel="nofollow" target="_blank" title="Alby on Telegram">
+								<img
+									class="social-icons"
+									src="images/social/telegram.svg"
+									width="30"
+									height="30"
+									alt="Telegram logo"
+								/>
+							</a>
+							<a href="https://github.com/getAlby" class="text-dark" rel="nofollow" target="_blank" title="Alby on Github">
+								<img
+									class="social-icons"
+									src="images/social/github.svg"
+									width="30"
+									height="30"
+									alt="Github logo"
+								/>
+							</a>
+						</div>
+						<div id="add_alby_btn">
+							<a href="#" class="btn btn-outline-dark bg-white btn-lg rounded-pill button--firefox"><img src="images/browsers/firefox-icon.png" style="max-height: 32px;"/><b> Add to Firefox</b></a>
+							<a href="#" class="btn btn-outline-dark bg-white btn-lg rounded-pill button--chrome"><img src="images/browsers/google-icon.png" style="max-height: 32px;"/><b> Add to Chrome</b></a>
+							<a href="https://github.com/getAlby/lightning-browser-extension#try-out-the-most-recent-version" class="btn btn-outline-dark bg-white btn-lg rounded-pill button--other"><b>Add to my browser</b></a>
+						</div>
 						<div id="do-it">
-							<img src="images/array.png" class="mx-5"/><span >Do it!</span>
+							<img 
+								src="images/do-it-hint.png" 
+								srcset="images/do-it-hint.png 1x, images/do-it-hint@2x.png 2x"
+								width="130" 
+								height="92"
+								alt="Do it"
+							/>
 						</div>
 					</div>
-					<div class="col-md-6 text-center py-5">
-						<img src="images/logo/alby.png" style="max-height: 380px;" class="align-bottom"/>
-						<img src="images/publisher-reduced.png" style="max-height: 680px;" class="align-bottom"/>
+					<div class="banner-image">
+						<picture>
+							<source
+								media="(max-width: 639px)"
+								src="images/banner-illustration-mobile.png" 
+								srcset="images/banner-illustration-mobile.png 1x, images/banner-illustration-mobile@2x.png 2x"
+							>
+							<img
+								src="images/banner-illustration.png"
+								srcset="images/banner-illustration.png 1x, images/banner-illustration@2x.png 2x"
+								alt="Alby character in front of a screen of the Alby browser extension" 
+								width="710" 
+								height="760"
+							>
+						</picture>
 					</div>
 				</div>
 			</div>
