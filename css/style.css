@@ -41,8 +41,6 @@ h1, h2, h3, h4, h5, h6, label {
 
 body {
   font-family: 'Catamaran', system-ui, Arial, sans-serif;
-  line-height: 1.6;
-  font-size: 14px;
 }
 
 p {
@@ -57,12 +55,13 @@ p {
 .bg-primary {
   background-color: var(--primary) !important;
 }
+
 .bg-secondary {
   background-color: var(--secondary) !important;
 }
 
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .container {
     max-width: 1340px;
   }
@@ -72,32 +71,13 @@ main section h1 {
   font-weight: 900 !important;
 }
 
-/* Font Caveat */
-@font-face {
-  font-family: 'Caveat';
-  src: url('../fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
-  font-weight: 300;
-}
-
-main #do-it{
-  padding-left: 100px;
-  padding-top: 20px;
+main #do-it {
+  margin-left: -12px;
 }
 
 /*----------------------------------
   Buttons
 ------------------------------------*/
-/*.btn {
-  cursor: pointer;
-  transition: .2s ease;
-}
-
-.btn.focus,
-.btn:focus .btn.active:focus, .btn:active:focus {
-  outline: 0 none;
-  box-shadow: none;
-  border-color: transparent;
-}*/
 
 .btn-primary {
   background-color: var(--primary);
@@ -172,10 +152,6 @@ header .btn .feather,
 	height: 18px;
 }
 
-main ul {
-  list-style: none; /* Remove default bullets */
-}
-
 main ul li::before {
   content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: white; /* Change the color */
@@ -195,24 +171,8 @@ header .container-fluid {
   padding: 0;
 }
 
-header .navbar-brand {
-  
-}
-
 header .navbar-brand img {
   height: auto;
-}
-
-header .navbar-nav {
-  
-}
-
-header .navbar-nav .nav-item {
-  
-}
-
-header .navbar-nav .nav-item a {
-  
 }
 
 header .social-icons {
@@ -230,10 +190,6 @@ section.banner .container {
   max-width: 1400px;
 }
 
-section.banner .banner-copy {
-
-}
-
 section.banner h1 {
   margin: 0;
   padding: 0;
@@ -244,20 +200,8 @@ section.banner h3 {
   line-height: 1.4;
 }
 
-section.banner ul {
-
-}
-
-section.banner ul li {
-
-}
-
 section.banner #add_alby_btn {
   display: flex;
-}
-
-section.banner #add_alby_btn a {
-
 }
 
 section.banner .banner-social-links {
@@ -277,34 +221,9 @@ section.banner .banner-social-links a {
   border-radius: 100px;
 }
 
-section.banner #do-it {
-
-}
-
-section.banner .banner-image {
-
-}
-
 section.banner .banner-image img {
   height: auto;
 }
-
-/* Styles for showing/hiding browser-specific buttons */
-
-#add_alby_btn_header a.button--chrome { display: none; }
-#add_alby_btn_header a.button--firefox { display: none; }
-#add_alby_btn a.button--chrome { display: none; }
-#add_alby_btn a.button--firefox { display: none; }
-
-body.--chrome #add_alby_btn_header a.button--chrome { display: block; }
-body.--chrome #add_alby_btn_header a.button--other { display: none; }
-body.--chrome #add_alby_btn a.button--chrome { display: block; }
-body.--chrome #add_alby_btn a.button--other { display: none; }
-
-body.--firefox #add_alby_btn_header a.button--firefox { display: block; }
-body.--firefox #add_alby_btn_header a.button--other { display: none; }
-body.--firefox #add_alby_btn a.button--firefox { display: block; }
-body.--firefox #add_alby_btn a.button--other { display: none; }
 
 /* Unique to mobile */
 
