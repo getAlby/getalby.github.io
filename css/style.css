@@ -43,11 +43,6 @@ body {
   font-family: 'Catamaran', system-ui, Arial, sans-serif;
 }
 
-p {
-  text-align: justify;
-  line-height: 1.8;
-}
-
 .text-muted {
   color: var(--muted);
 }
@@ -63,7 +58,7 @@ p {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1340px;
+    max-width: 1400px;
   }
 }
 
@@ -186,10 +181,6 @@ header .display-1 .feather {
 
 /* Banner */
 
-section.banner .container {
-  max-width: 1400px;
-}
-
 section.banner h1 {
   margin: 0;
   padding: 0;
@@ -228,7 +219,7 @@ section.banner .banner-image img {
 /* Unique to mobile */
 
 /*@media only screen and (max-width: 639px) {*/
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 991px) {
   header.navbar .container-fluid {
     justify-content: center;
     padding-top: 20px;
@@ -280,13 +271,17 @@ section.banner .banner-image img {
 
 /* Unique to tablet */
 
-@media only screen and (min-width: 640px) and (max-width: 1023px) {
+@media only screen and (min-width: 640px) and (max-width: 991px) {
   header .navbar-brand img {
     width: 138px;
   }
+}
 
+/* Tablet and up */
+
+@media only screen and (min-width: 640px) {
   section.banner h1 {
-    font-size: 68px;
+    font-size: 54px;
   }
 
   section.banner h3 {
@@ -297,7 +292,7 @@ section.banner .banner-image img {
 
 /* Unique to desktop */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 992px) {
   body {
     display: flex;
     flex-direction: column;
@@ -358,11 +353,19 @@ section.banner .banner-image img {
   }
 
   section.banner h1 {
-    font-size: 80px;
+    font-size: 68px;
   }
 
   section.banner h3 {
     margin-top: 15px;
     font-size: 24px;
+  }
+}
+
+/* Large desktop and up */
+
+@media only screen and (min-width: 1200px) {
+  section.banner h1 {
+    font-size: 80px;
   }
 }
