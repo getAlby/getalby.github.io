@@ -115,7 +115,6 @@
 						<div id="add_alby_btn_header">
 							<a href="#" class="btn btn-outline-dark bg-white rounded-pill fw-bold d-none button--firefox">Add to Firefox</a>
 							<a href="#" class="btn btn-outline-dark bg-white rounded-pill fw-bold d-none button--chrome">Add to Chrome</a>
-							<a href="https://github.com/getAlby/lightning-browser-extension#try-out-the-most-recent-version" class="btn btn-outline-dark bg-white rounded-pill fw-bold d-none button--other">Add to my browser</a>
 						</div>
 					</li>
 				</ul>
@@ -169,9 +168,15 @@
 							<div id="add_alby_btn">
 								<a href="#" class="btn btn-outline-dark bg-white btn-lg rounded-pill fw-bold d-none button--firefox"><img src="images/browsers/firefox-icon.png" style="max-height: 32px;" alt="Firefox" /> Add to Firefox</a>
 								<a href="#" class="btn btn-outline-dark bg-white btn-lg rounded-pill fw-bold d-none button--chrome"><img src="images/browsers/google-icon.png" style="max-height: 32px;" alt="Chrome" /> Add to Chrome</a>
-								<a href="https://github.com/getAlby/lightning-browser-extension#try-out-the-most-recent-version" class="btn btn-outline-dark bg-white btn-lg rounded-pill fw-bold d-none button--other">Add to my browser</a>
+								<a href="https://github.com/getAlby/lightning-browser-extension#try-out-the-most-recent-version" class="btn p-3 bg-secondary fw-bold d-none button--other" style="border-radius: 16px;">
+									<div class="d-flex gap-3 justify-content-center mb-2">
+										<img src="images/browsers/google-icon.png" style="max-height: 38px;" alt="Chrome" />
+										<img src="images/browsers/firefox-icon.png" style="max-height: 38px;" alt="Firefox" />
+									</div>
+									<div class="text-white" style="font-size: 18px;">Available on Chrome & Firefox</div>
+								</a>
 							</div>
-							<div id="do-it" class="mt-4 me-1 position-relative start-50">
+							<div id="do-it" class="mt-4 me-1 position-relative start-50 d-none button--firefox button--chrome">
 								<img 
 									src="images/do-it-hint.png" 
 									srcset="images/do-it-hint.png 1x, images/do-it-hint@2x.png 2x"
