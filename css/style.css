@@ -3,8 +3,7 @@
     --primary:#F8C555;
     /*--primary-hover:#;*/
 
-    /* Yelllow of the bee */
-    --secondary:#FFDF6E;
+    --secondary:#DC9A09;
     /*--secondary-hover:#;*/
 
     --muted:#666666;
@@ -122,6 +121,11 @@ main #do-it {
   color: black;
   /*border: solid 4px var(--secondary);*/
   box-shadow: 0 8px 15px -5px #C69E44;
+}
+
+.button--other {
+  font-size: 18px;
+  border-radius: 16px;
 }
 
 label {
