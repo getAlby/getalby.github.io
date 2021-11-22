@@ -1,6 +1,8 @@
 (function () {
   if (isFirefox()) {
     showElem(".button--firefox");
+  } else if (isBrave()) {
+    showElem(".button--brave");
   } else if (isGoogleChrome()) {
     showElem(".button--chrome");
   } else {
@@ -23,6 +25,14 @@ function isGoogleChrome() {
     return true;
   }
   return false;
+}
+
+async function isBrave() {
+  if (await navigator.brave.isBrave()) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function showElem(selector) {
